@@ -1,3 +1,5 @@
+import 'package:auth_pp/screens/signin.dart';
+import 'package:auth_pp/screens/signup.dart';
 import 'package:auth_pp/widgets/custom_scaffold.dart';
 import 'package:auth_pp/widgets/welcome_button.dart';
 import 'package:flutter/material.dart';
@@ -50,11 +52,17 @@ class Welcome extends StatelessWidget {
                   Expanded(
                     child: WelcomeButton(
                       buttonText: 'Sign in',
+                      onTap: Signin(),
+                      color: Colors.transparent,
+                      textColor: Colors.white,
                     )
                     ),
                   Expanded(
                     child: WelcomeButton(
                       buttonText: 'Sign up',
+                      onTap: Signup(),
+                      color: Colors.white,
+                      textColor: Colors.red,
                     )
                     ),
                 ],
